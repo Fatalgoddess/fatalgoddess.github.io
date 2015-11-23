@@ -4,3 +4,17 @@ body{
 
 	a{
 		color:pink;}
+		h1{ font-family: "Times New Roman" serif;
+		font-size: 40pt.;
+		font-weight: bold;}
+
+		a:hover{color:red;
+			background: white;
+			text-decoration: none;
+		}
+
+		p{font-family: "Arial" serif;
+		font-size: 20pt.;
+	}
+
+

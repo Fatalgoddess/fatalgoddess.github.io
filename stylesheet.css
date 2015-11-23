@@ -1,20 +1,27 @@
 body{
 	background:black;
-	color:white;}
+	color:white;
+}
 
-	a{
-		color:pink;}
-		h1{ font-family: "Times New Roman" serif;
-		font-size: 40pt.;
-		font-weight: bold;}
+a{
+	color:pink;
+}
+	
+h1{ 
+	font-family: "Times New Roman" serif;
+	font-size: 40pt.;
+	font-weight: bold;
+}
 
-		a:hover{color:red;
-			background: white;
-			text-decoration: none;
-		}
+a:hover{
+	color:red;
+	background: white;
+	text-decoration: none;
+}
 
-		p{font-family: "Arial" serif;
-		font-size: 20pt.;
-	}
+p{
+	font-family: "Arial" serif;
+	font-size: 20pt.;
+}
 
 

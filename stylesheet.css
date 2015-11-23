@@ -9,7 +9,7 @@ a{
 	
 h1{ 
 	font-family: "Times New Roman" serif;
-	font-size: 40pt.;
+	font-size: 40pt;
 	font-weight: bold;
 }
 
@@ -21,10 +21,10 @@ a:hover{
 
 p{
 	font-family: "Arial" serif;
-	font-size: 20pt.;
+	font-size: 20pt;
 }
 
 .indent{
-	margin-left: 20px.;
+	margin-left: 20px;
 	}
 

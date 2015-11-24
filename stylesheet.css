@@ -29,6 +29,7 @@ p{
 }
 
 .picture{
+<<<<<<< HEAD
 	background-image: https://photos-3.dropbox.com/t/2/AAAr0xyVdLlxVxw1GQFNE_rrMlKu4GXhfJYMN_w3aSpvNQ/12/205084393/jpeg/32x32/1/_/1/2/P1110989.JPG/ELXq9JoBGIQQIAIoAg/MrKBgdtHUGh4npLMFQE8QgfuZZc1JimSaCeA3tQR1iY%2CWF-roScfXzt-EPp4y4YtUkpvJLgp6I-8kapqC2dJ0f4?size=1024x768&size_mode=3;
 }
 
@@ -36,8 +37,13 @@ p{
 	@media(max-width: 1000px)
 	{ 
 		body {background: purple;} } 
-
+}
+.pinkify{
 	@media(max width: 500px){
 		body{background: pink;}
 	}
 }
+=======
+	background-image: url("https://photos-3.dropbox.com/t/2/AAAr0xyVdLlxVxw1GQFNE_rrMlKu4GXhfJYMN_w3aSpvNQ/12/205084393/jpeg/32x32/1/_/1/2/P1110989.JPG/ELXq9JoBGIQQIAIoAg/MrKBgdtHUGh4npLMFQE8QgfuZZc1JimSaCeA3tQR1iY%2CWF-roScfXzt-EPp4y4YtUkpvJLgp6I-8kapqC2dJ0f4?size=1024x768&size_mode=3;") 
+}
+>>>>>>> origin/master

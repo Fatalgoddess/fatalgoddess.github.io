@@ -2,7 +2,7 @@ body{
 	background:black;
 	color:white;
 }
-
+/*
 a{
 	color:pink;
 }
@@ -22,7 +22,7 @@ a:hover{
 p{
 	font-family: "Calibri" serif;
 	font-size: 12pt;
-}
+} */
 
 .indent{
 	margin-left: 20px;

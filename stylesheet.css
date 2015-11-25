@@ -51,4 +51,5 @@ p{
 .funnylink{
 		color:grey;
 		display: inline;
+		cursor: pointer;
 }

@@ -6,15 +6,20 @@
 
 	<title>Fatalgoddess'first webpage</title>
 
+	<!--Loading bootstrap -->
 	<link rel="stylesheet"
 	type="text/css"
 	href="bootstrap.css"/>
 
-
+	<!--Loading the default Fatal Stylesheet -->
 	<link rel="stylesheet"
 	type="text/css"
 	href="stylesheet.css"/>
 
+	<!--Loading the imagestyle Stylesheet -->
+	<link rel="stylesheet"
+	type="text/css"
+	href="imagestyle.css"/>
 
 	<!--Jquery load -->
 	<script src= "https://code.jquery.com/jquery-2.1.4.min.js"></script>
@@ -23,6 +28,7 @@
 
 <body> <div class="container">
 
+	<!--Navigation bar -->
 	<a href = "index.html" > Home </a>
 	&nbsp;  
 	<a href = "purpose.html"> The idea </a>
@@ -34,8 +40,8 @@
 
 	<div class="row">
 		<div class="col-md-3" >		
-			
-			<!-- A small image -->
+
+		<!-- A small image -->
 
 			<img class = "smallimg" src="https://photos-5.dropbox.com/t/2/AABM9FAMIPZjDmHxMy85piVT6XvFsy0xii46OxVknWxqIA/12/205084393/jpeg/32x32/1/_/1/2/P1120328.JPG/ELXq9JoBGIQQIAIoAg/P_l3o5cG2IHqv_NWOf0TEGakB17ePv_B7DaixG121XI%2CGKOdAczUSf95rx33wq2HT1J80tAWbnbOCBYsoyh2VHQ?size=800x600&size_mode=3"/>
 		</div>	
@@ -68,6 +74,14 @@
 	</div>
 
 </div>
+
+<!--The gallery javascript:
+	These are the thumbnail images.
+	They are laid out using the 
+	bootstrap grid.
+	I have given them all the class
+	"smallimg" which I use in the
+	css and the javascript code.-->
 
 <script type="text/javascript">
 $(".smallimg").click(function(){

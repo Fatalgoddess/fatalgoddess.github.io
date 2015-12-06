@@ -41,29 +41,56 @@
 	<div class="row">
 		<div class="col-md-3" >		
 
-		<!-- A small image -->
+			<!-- A small image -->
 
-			<img class = "smallimg" src="https://dl.dropboxusercontent.com/s/8v9sahvkfxzthy3/P1120462.JPG?dl=0"/>
+			<img id = "img1" class = "smallimg" src="https://dl.dropboxusercontent.com/s/8v9sahvkfxzthy3/P1120462.JPG?dl=0" 
+			alt = "kitten"/>
 		</div>	
 
 		<!-- A small image -->
 
 		<div class="col-md-3" >
-			<img class = "smallimg" src="https://dl.dropboxusercontent.com/s/9x86gdch26ywywk/P1120378.JPG?dl=0"/>
+			<img id = "img2" class = "smallimg" src="https://dl.dropboxusercontent.com/s/9x86gdch26ywywk/P1120378.JPG?dl=0"
+			alt= "water"/>
 		</div>	
 
 		<!-- A small image -->
 
 		<div class="col-md-3">
-			<img class = "smallimg" src="https://dl.dropboxusercontent.com/s/19mjemwutnudxde/P1120328.JPG?dl=0"/>
+			<img id = "img3" class = "smallimg" src="https://dl.dropboxusercontent.com/s/19mjemwutnudxde/P1120328.JPG?dl=0"
+			alt= "castle"/>
 		</div>
 
 		<!-- A small image -->
 
 		<div class="col-md-3">
-			<img class = "smallimg" src="https://dl.dropboxusercontent.com/s/j1z3xev6qm1r27s/P1120330.JPG?dl=0" />
+			<img id = "img4" class = "smallimg" src="https://dl.dropboxusercontent.com/s/j1z3xev6qm1r27s/P1120330.JPG?dl=0"
+			alt= "church" />
 		</div>
 	</div>
+
+	<!--Putting arrows in for navigation-->
+	<br>
+	<div class= "row">
+		<!--back button-->
+
+		<div class = "col-md-1">
+			<button id = "backwards" class = "gallerybutton"> &#60; </button>
+		</div> 
+
+		<!--empty space for 10 just to place that grid right-->
+
+		<div class = "col-md-10"> </div>
+
+		<!--forth button-->
+
+		<div class = "col-md-1">
+			<button id = "forward" class = "gallerybutton"> &#62; </button>
+		</div>
+
+
+	</div>
+	<br>
 
 	<!--  The big image with it's own row --> 
 	<div class ="row">
@@ -83,12 +110,41 @@
 	"smallimg" which I use in the
 	css and the javascript code.-->
 
-<script type="text/javascript">
+	<script type="text/javascript">
+
+	var counter = 1;
+
+//What happens on click
+
 $(".smallimg").click(function(){
 	$("#bigImage").attr('src',$(this).attr('src'));
 
 });
 
+//The image skipping script
+
+
+$("#backwards").click(function (){
+	counter = counter - 1;
+	if(counter<1){
+		counter =4;
+	}
+//induce a virtual click to the next image
+$("#img"+counter).click(); 
+});
+
+$("#forward").click(function (){
+	counter = counter +1;
+	if(counter>4){
+		counter =1;
+	}
+//induce a virtual click to the next image
+$("#img"+counter).click();
+});
+
 </script>
 </body>
 </html>
+
+
+

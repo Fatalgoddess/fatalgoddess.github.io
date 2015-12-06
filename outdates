@@ -1,0 +1,21 @@
+/* Some outdated formatting settings
+a{
+	color:pink;
+}
+
+h1{ 
+	font-family: "Times New Roman" serif;
+	font-size: 40pt;
+	font-weight: bold;
+}
+
+a:hover{
+	color:red;
+	background: white;
+	text-decoration: none;
+}
+
+p{
+	font-family: "Calibri" serif;
+	font-size: 12pt;
+} */

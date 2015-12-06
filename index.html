@@ -1,81 +1,79 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
+<title>Fatalgoddess'first webpage</title>
+<!--Bootstrap import-->
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+<!--Internal Stylesheet import-->
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<!--Pretty google font import-->
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+<!--Jquery load -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
 
-	<title>Fatalgoddess'first webpage</title>
+<body class="backgroundnormal">
+<br>
 
-	<link rel="stylesheet"
-	type="text/css"
-	href="bootstrap.css"/>
-
-
-	<link rel="stylesheet"
-	type="text/css"
-	href="stylesheet.css"/>
-
-	<!--Jquery load -->
-	<script src= "https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-
-</head>  
-
-<body> <div class="container">
-
-	<a href = "index.html" > Home </a>
-	&nbsp;  
-	<a href = "purpose.html"> The idea </a>
-	&nbsp;
-	<a href = "aboutme.html"> The goddess </a>
-	&nbsp;
-	<a href = "gallery.html"> Check out the gallery!</a>
-	<hr></hr>
-
-
-	<h1> "Add cheesy quote <div onclick = "alert('Hello');" class = "funnylink"> here" </div></h1>
-
-
-
-	<p> Welcome to my webpage one and all!</p>
-
-
-	<div class="row">
-		<div class="col-md-9">
-			<iframe width="854" height="480" src="https://www.youtube.com/embed/8AOfbnGkuGc" frameborder="0" allowfullscreen></iframe>
-
-		</div>
-		<div class ="col-md-3">
-
-
-
-			<h2> So why are you here? </h2>
-			<ol>
-				<li>  Maybe you're hungry </li>
-				<li>  Bed bugs </li>
-				<li>  Learning how to make lists with html </li>
-
-			</ol>
-
-			<p>
-
-				<span class = "indent"> You are my reason to stay <br> Even if daylight's a lifetime away  </span>
-				<br> May the kings and the queens of the dawn 
-				<br> Remember my name <br>
-
-				As dark as the fallen star
-			</p>
-
-
-		</div>
+<!--the navigation bar-->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+	<div class="navbar-header">
+	<a class="navbar-brand" href="index.html">Antonia Ivanova's webpage</a>
 	</div>
 
-	<p class = "indent">
-		<a href= "experiments.html"> Curiosity button </a>
-	</p>
+	<ul class="nav navbar-nav">
+	<li class="active"><a href="index.html">Home</a></li>
+	&nbsp;
+	<li><a class=".navbar-btn" href="purpose.html">The idea</a></li>
+	&nbsp;
+	<li><a class=".navbar-btn" href="aboutme.html">The goddess</a></li>
+	&nbsp;
+	<li><a class=".navbar-btn" href="gallery.html">Image gallery</a></li>
+	</ul>
+	
+</div>
+</nav>
+
+<!--page container & global textstyle-->
+<div class="container-fluid">
+<span class="textstyle">
 
 
+<h1> "Add cheesy quote <div onclick = "alert('Hello');" class = "funnylink"> here" </div></h1>
 
+<p><span class="textstyle">Welcome to my webpage one and all!</span></p>
+
+<div class="row">
+	<div class="col-md-6">
+		<iframe allowfullscreen="" frameborder="0" height="480" 
+		src="https://www.youtube.com/embed/8AOfbnGkuGc" width="854"></iframe>
+	</div>
+
+	<div class="col-md-6">
+		<h2>So why are you here?</h2>
+
+		<ol>
+		<li>Maybe you're hungry</li>
+		<li>Bed bugs</li>
+		<li>Learning how to make lists with html</li>
+		</ol>
+
+		<pre class="backgroundnormal" style="border: none;">
+		<span class="textstyle">
+You are my reason to stay
+Even if daylight's a lifetime away
+May the kings and the queens of the dawn 
+Remember my name 
+As dark as the fallen star
+		</span>
+		</pre>
+
+	</div>
+</div>
+
+<p class="indent"><a href="experiments.html">Curiosity button</a></span></p>
 
 </div>
 </body>

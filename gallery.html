@@ -1,110 +1,96 @@
-<!doctype html>
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="utf-8">
+<meta charset="utf-8">
+<title>Fatalgoddess'first webpage</title>
+<!--Bootstrap import-->
+<link href="bootstrap.css" rel="stylesheet" type="text/css">
+<!--Internal Stylesheet import-->
+<link href="stylesheet.css" rel="stylesheet" type="text/css">
+<!--Loading the imagestyle Stylesheet -->
+<link rel="stylesheet" type="text/css" href="imagestyle.css"/>
+<!--Pretty google font import-->
+<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+<!--Jquery load -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+</head>
 
-	<title>Fatalgoddess'first webpage</title>
+<body class="backgroundnormal">
+<br>
 
-	<!--Loading bootstrap -->
-	<link rel="stylesheet"
-	type="text/css"
-	href="bootstrap.css"/>
-
-	<!--Loading the default Fatal Stylesheet -->
-	<link rel="stylesheet"
-	type="text/css"
-	href="stylesheet.css"/>
-
-	<!--Loading the imagestyle Stylesheet -->
-	<link rel="stylesheet"
-	type="text/css"
-	href="imagestyle.css"/>
-
-	<!--Jquery load -->
-	<script src= "https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
-</head>  
-
-<body> <div class="container">
-
-	<!--Navigation bar -->
-	<a href = "index.html" > Home </a>
-	&nbsp;  
-	<a href = "purpose.html"> The idea </a>
-	&nbsp;
-	<a href = "aboutme.html"> The goddess </a>
-	&nbsp;
-	<a href = "gallery.html"> Check out the gallery!</a>
-	<!--slideshow button-->
-	<span class ="btn pull-right">
-		<button id = "slideshow" class=  "btn btn-info" onclick = "SlideShow();"> Start slideshow </button> </span>
-		<hr>
-
-
-		<div class="row">
-			<div class="col-md-3" >		
-
-				<!-- A small image -->
-
-				<img id = "img1" class = "smallimg" src="https://dl.dropboxusercontent.com/s/8v9sahvkfxzthy3/P1120462.JPG?dl=0" 
-				alt = "kitten"/>
-			</div>	
-
-			<!-- A small image -->
-
-			<div class="col-md-3" >
-				<img id = "img2" class = "smallimg" src="https://dl.dropboxusercontent.com/s/9x86gdch26ywywk/P1120378.JPG?dl=0"
-				alt= "water"/>
-			</div>	
-
-			<!-- A small image -->
-
-			<div class="col-md-3">
-				<img id = "img3" class = "smallimg" src="https://dl.dropboxusercontent.com/s/19mjemwutnudxde/P1120328.JPG?dl=0"
-				alt= "castle"/>
-			</div>
-
-			<!-- A small image -->
-
-			<div class="col-md-3">
-				<img id = "img4" class = "smallimg" src="https://dl.dropboxusercontent.com/s/j1z3xev6qm1r27s/P1120330.JPG?dl=0"
-				alt= "church" />
-			</div>
-		</div>
-
-		<!--Putting arrows in for navigation-->
-		<br>
-		<div class= "row">
-			<!--back button-->
-
-			<div class = "col-md-1">
-				<button id = "backwards" class = "gallerybutton"> &#60; </button>
-			</div> 
-
-			<!--empty space for 10 just to place that grid right-->
-
-			<div class = "col-md-10"> </div>
-
-			<!--forth button-->
-
-			<div class = "col-md-1">
-				<button id = "forward" class = "gallerybutton"> &#62; </button>
-			</div>
-
-
-		</div>
-		<br>
-
-		<!--  The big image with it's own row --> 
-		<div class ="row">
-			<div class = "col-md-12" >
-				<img id ="bigImage" class="bigimg" src="https://dl.dropboxusercontent.com/s/8v9sahvkfxzthy3/P1120462.JPG?dl=0"/>
-			</div>
-
-		</div>
-
+<!--the navigation bar-->
+<nav class="navbar navbar-inverse">
+<div class="container-fluid">
+	<div class="navbar-header">
+	<a class="navbar-brand" href="index.html">Antonia Ivanova's webpage</a>
 	</div>
+
+	<ul class="nav navbar-nav">
+	<li><a href="index.html">Home</a></li>
+	&nbsp;
+	<li><a class=".navbar-btn" href="purpose.html">The idea</a></li>
+	&nbsp;
+	<li><a class=".navbar-btn" href="aboutme.html">The goddess</a></li>
+	&nbsp;
+	<li class="active"><a class=".navbar-btn" href="gallery.html">Image gallery</a></li>
+	<!--slideshow button-->
+	<span class ="btn pull-right"> <li> 
+	<button id = "slideshow" class=  "btn btn-info" onclick = "SlideShow();"> Start slideshow </button> 
+	</li> </span>
+	</ul>
+	
+</div>
+</nav>
+
+<!--page container & global textstyle-->
+<div class="container">
+<span class="textstyle">
+
+<div class="row">
+	<div class="col-md-3" >		
+	<!-- A small image -->
+	<img id = "img1" class = "smallimg" src="Images/image_1.jpg" alt = "kitten"/>
+	</div>	
+
+	<div class="col-md-3" >
+	<!-- A small image -->
+	<img id = "img2" class = "smallimg" src="Images/image_2.jpg" alt= "water"/>
+	</div>	
+
+	<div class="col-md-3">
+	<!-- A small image -->
+	<img id = "img3" class = "smallimg" src="Images/image_3.jpg" alt= "castle"/>
+	</div>
+
+	<!-- A small image -->
+	<div class="col-md-3">
+	<img id = "img4" class = "smallimg" src="Images/image_4.jpg" alt= "church" />
+	</div>
+</div>
+
+<!--Putting arrows in for navigation-->
+<br>
+<div class= "row">
+	<!--back button-->
+	<div class = "col-md-1"><button id = "backwards" class = "gallerybutton"> &#60; </button></div> 
+
+	<!--empty space for 10 just to place that grid right-->
+	<div class = "col-md-10"> </div>
+
+	<!--forth button-->
+	<div class = "col-md-1"><button id = "forward" class = "gallerybutton"> &#62; </button></div>
+
+</div>
+<br>
+
+<!--  The big image with it's own row --> 
+<div class ="row">
+	<div class = "col-md-12" >
+	<img id ="bigImage" class="bigimg" src="https://dl.dropboxusercontent.com/s/8v9sahvkfxzthy3/P1120462.JPG?dl=0"/>
+	</div>
+</div>
+
+</div>
 
 <!--The gallery javascript:
 	These are the thumbnail images.
@@ -114,10 +100,10 @@
 	"smallimg" which I use in the
 	css and the javascript code.-->
 
-	<script type="text/javascript">
+<script type="text/javascript">
 
-	var counter = 1;
-	var paused = true;
+var counter = 1;
+var paused = true;
 
 //What happens on click
 
@@ -126,7 +112,7 @@ $(".smallimg").click(function(){
 
 });
 
-//The image skipping script
+//The image skipping script:
 
 //the back button onclick
 $("#backwards").click(function (){

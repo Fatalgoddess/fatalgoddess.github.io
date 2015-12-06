@@ -114,9 +114,10 @@
 	"smallimg" which I use in the
 	css and the javascript code.-->
 
-<script type="text/javascript">
+	<script type="text/javascript">
 
 	var counter = 1;
+	var paused = true;
 
 //What happens on click
 
@@ -146,16 +147,20 @@ $("#forward").click(function (){
 $("#img"+counter).click();
 });
 
+//Onclick start slideshow function, set the paused attribute initial value
 function SlideShow(){
-$("#slideshow").html("Stop");
-RunShow();
-$("#slideshow").off("click");
-}
-
-function RunShow(){
-	setInterval(function(){
+	paused = !paused;
+	if(!paused){
+		$("#slideshow").html("Stop");
+		setInterval(function(){
 			$("#forward").click();
 		},3000);
+	} 
+	else if(paused){
+		$("#slideshow").html("Start SlideShow");
+		$("#forward").off("click");	
+
+	}
 }
 
 </script>

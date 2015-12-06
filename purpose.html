@@ -11,6 +11,9 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <!--Jquery load -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<!--Supersized CSS and JS-->
+<link rel="stylesheet" href="supersized.core.css" type="text/css" media="screen" />
+<script type="text/javascript" src="supersized.core.3.2.1.min.js"></script>
 </head>
 
 <body class="purposeback">
@@ -44,5 +47,13 @@
 
 
 </div>
+<script type="text/javascript">
+jQuery(function($){
+				
+				$.supersized({
+					slides  :  	[ {image : 'Patterns/window.jpg'} ]
+				});
+		    });
+</script>
 </body>
 </html>

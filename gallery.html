@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <title>Fatalgoddess'first webpage</title>
 <!--Bootstrap import-->
-<link href="bootstrap.css" rel="stylesheet" type="text/css">
+<link href="Bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css">
 <!--Internal Stylesheet import-->
 <link href="stylesheet.css" rel="stylesheet" type="text/css">
 <!--Loading the imagestyle Stylesheet -->
@@ -19,34 +19,49 @@
 
 <body class="backgroundnormal">
 <br>
-
 <!--the navigation bar-->
 <span style = "font-family: 'Ubuntu', sans-serif; font-size: medium;">
-<nav class="navbar navbar-inverse navbar-fixed-top">
-<div class="container-fluid">
-	
+<nav class="navbar navbar-inverse navbar-fixed-top"
+role = "navigation">
+<div class="container">
+
 	<div class="navbar-header">
+	<!--responsive button-->
+	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+    <!--logo-->
 	<a class="navbar-brand" href="index.html">
-	<img src="Patterns\f_logo_white.png" alt = "logo"></a>
+	<img src="Patterns\f_logo_white.png" alt = "logo">
+	</a>
 	</div>
 
-	<ul class="nav navbar-nav">
-	<li><a href="index.html">Home</a></li>
+	<!--collapsable-->
+	<div class = "navbar-collapse collapse">
+	<!--itemset-->
+
+	<ul class="nav navbar-nav navbar-right">
+	<li class="active"><a href="index.html">Home</a></li>
 	&nbsp;
 	<li><a class=".navbar-btn" href="purpose.html">The idea</a></li>
 	&nbsp;
 	<li><a class=".navbar-btn" href="aboutme.html">The goddess</a></li>
 	&nbsp;
-	<li class="active"><a class=".navbar-btn" href="gallery.html">Image gallery</a></li></ul>
+	<li><a class=".navbar-btn" href="gallery.html">Image gallery</a></li>
 	<!--slideshow button-->
 	<ul class="nav navbar-nav navbar-right">
 	<span class ="btn pull-right"> <li> 
 	<button id = "slideshow" class=  "btn btn-info" onclick = "SlideShow();"> Start slideshow </button> 
 	</li> </span>
 	</ul>
-	
+</div>	
+</div>
 </div>
 </nav>
+</span>
 
 <!--page container & global textstyle-->
 <div class="container">

@@ -2,6 +2,9 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Antonia Ivanova webpage">
 <title>Fatalgoddess'first webpage</title>
 <!--Bootstrap import-->
 <link href="Bootstrap\css\bootstrap.css" rel="stylesheet" type="text/css">
@@ -11,8 +14,10 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <!--Navbar font-->
 <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<!--Bootstrap core jS-->
 <!--Jquery load -->
 <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
 <!--Supersized CSS and JS-->
 <link rel="stylesheet" href="supersized.core.css" type="text/css" media="screen" />
 <script type="text/javascript" src="supersized.core.3.2.1.min.js"></script>
@@ -23,23 +28,22 @@
 
 <!--the navigation bar-->
 <span style = "font-family: 'Ubuntu', sans-serif; font-size: medium;">
-<nav class="navbar navbar-inverse navbar-fixed-top"
+<div class="navbar navbar-inverse navbar-fixed-top"
 role = "navigation">
-<div class="container">
-
-	<div class="navbar-header">
+ <div class="container">
+  <div class="navbar-header">
 	<!--responsive button-->
 	<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-          </button>
+    </button>
     <!--logo-->
 	<a class="navbar-brand" href="index.html">
 	<img src="Patterns\f_logo_white.png" alt = "logo">
 	</a>
-	</div>
+  </div>
 
 	<!--collapsable-->
 	<div class = "navbar-collapse collapse">
@@ -47,26 +51,24 @@ role = "navigation">
 
 	<ul class="nav navbar-nav navbar-right">
 	<li><a href="index.html">Home</a></li>
-	&nbsp;
 	<li class="active"><a class=".navbar-btn" href="purpose.html">The idea</a></li>
-	&nbsp;
+	
 	<li><a class=".navbar-btn" href="aboutme.html">The goddess</a></li>
-	&nbsp;
+	
 	<li><a class=".navbar-btn" href="gallery.html">Image gallery</a></li>
 	
-
+	
 	<!--search bar-->
 	<li><form class = "navbar-form">
-		<input type="text" class = "form-control" placeholder="Search this site.." id="searchinput">
-			<button type ="submit" class= "btn btn-default"><span class="glyphicon glyphicon-search"></span>
+	<input type="text" class = "form-control" placeholder="Search webpage.." id="searchinput" style= "width: 140px;">
+	<button type ="submit" class= "btn btn-default"><span class="glyphicon glyphicon-search"></span>
 			</button>
 	</form>
-	<li>
+	</li>
 	</ul>
 </div>	
 </div>
 </div>
-</nav>
 </span>
 
 <!--page container & global textstyle-->
@@ -85,5 +87,6 @@ jQuery(function($){
 				});
 		    });
 </script>
+
 </body>
 </html>

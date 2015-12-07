@@ -37,6 +37,6 @@
     font-size: 1.4em;
 }
 
-#searchInput{
-    width: 200px;
+.searchInput{
+    width: 100px;
 }

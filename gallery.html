@@ -16,7 +16,10 @@
 <link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
 <!--Navbar font-->
 <link href='https://fonts.googleapis.com/css?family=Ubuntu' rel='stylesheet' type='text/css'>
+<!--Bootstrap core jS-->
 <!--Jquery load -->
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="Bootstrap/js/bootstrap.min.js"></script>
 </head>
 
 <body class="backgroundnormal">
@@ -55,7 +58,6 @@ role = "navigation">
 	
 	
 	<!--slideshow button-->
-	<ul class="nav navbar-nav navbar-right">
 	<span class ="btn pull-right"> <li> 
 	<button id = "slideshow" class=  "btn btn-info" onclick = "SlideShow();"> Start slideshow </button> 
 	</li> </span>
@@ -133,10 +135,9 @@ var paused = true;
 //What happens on click
 
 $(".smallimg").click(function(){
-	$("#bigImage").attr('src',$(this).attr('src'));
-
-});
-
+			$("#bigImage").attr('src', 
+				$(this).attr('src'));
+		});
 //The image skipping script:
 
 //the back button onclick
@@ -176,10 +177,6 @@ function SlideShow(){
 
 </script>
 
-<!--Bootstrap core jS-->
-<!--Jquery load -->
-<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-<script src="Bootstrap/js/bootstrap.min.js"></script>
 
 </body>
 </html>

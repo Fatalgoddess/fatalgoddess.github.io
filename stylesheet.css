@@ -37,6 +37,11 @@
     font-size: 1.4em;
 }
 
+.darktextstyle{
+     font-family: 'Playfair Display',serif;
+    color: black;
+    font-size: 1.4em;
+}
 .searchInput{
     width: 100px;
 }

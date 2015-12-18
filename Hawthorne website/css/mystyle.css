@@ -1,0 +1,32 @@
+#mainjumbo{
+	
+	position: relative;
+    background: #000 url("../images/jumbo_photo.PNG") center center;
+    width: 100%;
+    height: 350px;
+    background-size: cover;
+    overflow: hidden;
+}
+
+body{
+	background-image: url("http://www.namuhaus.com/images/content/enter/background.jpg");
+	background-size: cover;
+}
+
+.photoshow_photo{
+	width: 100%;
+	height: auto;
+}
+
+ #largeImgPanel {
+                text-align: center;
+                display: none;
+                position: fixed;
+                z-index: 100;
+                top: 0; left: 0; width: 100%; height: 100%;
+                background-color: rgba(100,100,100, 0.5);
+            }
+.thumbnail :hover{
+	cursor:pointer;"
+}
+

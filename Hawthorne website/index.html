@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Hawthorne Family</title>
+	<!--Import JQuery-->
+	<script type = "text/javascript"
+	src = "jquery-2.1.4.js"></script>
+	<!--Import Bootstrap jS-->
+	<script type = "text/javascript"
+	src = "js/bootstrap.min.js"></script>
+	<!--Import Handlebars jS-->
+	<script type = "text/javascript"
+	src = "handlebars-v4.0.5.js"></script>
+	<!--Import custom Bootstrap theme-->
+	<link rel = "stylesheet"
+	href = "css/bootstrap.css" type ="text/css">
+	<!--Import custom StyleSheet-->
+	<link rel = "stylesheet"
+	href = "css/mystyle.css" type= "text/css">
+	  <!-- 
+      These are our javascript files.
+      Albums.js contains the data
+      gallery.js is the code
+    -->
+    <script src="js/Albums.js"> </script>
+    <script src="js/gallery.js"> </script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+<body style = "color: #81b33a;">
+<div class = "container"><!--Page container-->
+
+<div class = "navbar-fixed-top container">
+<nav class = "navbar navbar-inverse"><!--Start navigation-->
+	<div class = "container-fluid">
+ 		<!--Collapsed navbar-->
+ 		<div class = "navbar-header"> 
+ 			<a href = "index.html"> <img class="navbar-brand" src="images/logo.PNG" style = "padding:0px;"> </a>
+ 			<button
+ 			type ="button"
+ 			class = "
+ 			navbar-toggle collapsed"
+ 			data-toggle = "collapse"
+ 			data-target = "#mainnav"
+ 			aria-expanded ="false">Navigation</button>
+ 			<span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+ 		</div> <!--/Collapsed-->
+		
+ 		<!--Uncollapsed navbar-->
+ 		<div class = "collapse navbar-collapse" id="mainnav">
+ 			<ul class = "nav navbar-nav navbar-right">
+ 				<li class = "active"> 
+ 				<a href="#">Home</a><li>
+ 				<li>
+ 				<a href="gallery.html">Gallery</a></li>
+ 				<li>
+ 				<a href="members.html">Members</a></li>
+ 			</ul><!--/Navigations-->
+ 		</div><!--/Usual nav-->
+ 	</div>
+</nav><!--/Nav-->
+</div><!--/Fixed navigation bar-->
+<div  class = "content" style="padding-top: 70px;">
+
+<div class = "jumbotron" id="mainjumbo"></div>
+<h1> Welcome to the Hawthorne family website! Who are we? </h1>
+<h2> The short answer is aliens.</h2>
+<p><embed src="contents/intro.txt" style = "width:100%"></p>
+
+<a href = "gallery.html" class = "btn btn-success"> Visit our beautiful gallery to follow out our story</a>
+
+
+</div> <!--/content-->
+</div> <!--/page container-->
+</body>
+</html>
